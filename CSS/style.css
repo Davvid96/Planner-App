@@ -4,13 +4,14 @@ body {
   line-height: 1;
 }
 
-textarea {
+.textBoxClass {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  flex: 1;
 }
 
 .jumbotron {
@@ -25,18 +26,15 @@ textarea {
   white-space: pre-wrap;
 }
 
-.time-block {
-  text-align: center;
-  border-radius: 15px;
-}
-
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+    text-align: center;
+  border-radius: 15px;
 }
 
-.hour {
+.timeClass {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
