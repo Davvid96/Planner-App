@@ -1,3 +1,5 @@
+// on form submit - user input saved in local storage
+
 $(".row").on("submit", function (event) {
   event.preventDefault();
   var calendarData = localStorage.getItem("calendarData")
@@ -9,9 +11,13 @@ $(".row").on("submit", function (event) {
   localStorage.setItem("calendarData", JSON.stringify(calendarData));
 });
 
+// on page load, inserts date/time top of page,
+// Extracts saved data from local storage and populates diary,
+// color scheme enabled for past/present/future activities.
+
 $(function (event) {
-  $("#currentDay").text(moment().format('llll'));
-  var currentTime = moment().format('HH').split(":")[0];
+  $("#currentDay").text(moment().format("llll"));
+  var currentTime = moment().format("HH").split(":")[0];
   console.log(currentTime);
   var calendarData = localStorage.getItem("calendarData")
     ? JSON.parse(localStorage.getItem("calendarData"))
@@ -21,20 +27,14 @@ $(function (event) {
     $(this)
       .find("textarea")
       .text(calendarData[`time${$(this).data("time")}`]);
-    if ($(this).data("time") < currentTime){
-      $(this)
-      .find("textarea").addClass("past");
+    if ($(this).data("time") < currentTime) {
+      $(this).find("textarea").addClass("past");
     }
-    if ($(this).data("time") == currentTime){
-      $(this)
-      .find("textarea").addClass("present");
+    if ($(this).data("time") == currentTime) {
+      $(this).find("textarea").addClass("present");
     }
-    if ($(this).data("time") > currentTime){
-      $(this)
-      .find("textarea").addClass("future");
+    if ($(this).data("time") > currentTime) {
+      $(this).find("textarea").addClass("future");
     }
   });
 });
-
-
-
