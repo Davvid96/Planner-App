@@ -11,6 +11,8 @@ $(".row").on("submit", function (event) {
 
 $(function (event) {
   $("#currentDay").text(moment().format('llll'));
+  var currentTime = moment().format('HH').split(":")[0];
+  console.log(currentTime);
   var calendarData = localStorage.getItem("calendarData")
     ? JSON.parse(localStorage.getItem("calendarData"))
     : null;
@@ -19,5 +21,20 @@ $(function (event) {
     $(this)
       .find("textarea")
       .text(calendarData[`time${$(this).data("time")}`]);
+    if ($(this).data("time") < currentTime){
+      $(this)
+      .find("textarea").addClass("past");
+    }
+    if ($(this).data("time") == currentTime){
+      $(this)
+      .find("textarea").addClass("present");
+    }
+    if ($(this).data("time") > currentTime){
+      $(this)
+      .find("textarea").addClass("future");
+    }
   });
 });
+
+
+
