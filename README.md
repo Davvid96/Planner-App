@@ -1,12 +1,12 @@
-# Third-Party APIs: Work Day Scheduler
+# Third-Party APIs: Work Day Scheduler Challenge
 
-## Your Task
+## The Task:
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+This week I have been tasked to create a simple calendar application that allows a user to save events for each hour of the working day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+I had to use the [Moment.js](https://momentjs.com/) library to work with date and time. Making sure to read the documentation carefully and concentrate on using Moment.js in the browser.
 
-## User Story
+## User Story:
 
 ```md
 AS AN employee with a busy schedule
@@ -16,7 +16,7 @@ SO THAT I can manage my time effectively
 
 ## Acceptance Criteria
 
-The app should:
+As per the acceptance Criteria The app should:
 
 * Display the current day at the top of the calender when a user opens the planner.
  
@@ -35,53 +35,27 @@ The following animation demonstrates the application functionality:
 ![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
 
 
-## Grading Requirements
+## End Result:
 
-This homework is graded based on the following criteria: 
+This was the end result of the challenge. 
 
-### Technical Acceptance Criteria: 40%
+App displays current day and time at top of app. 
 
-* Satisfies all of the above acceptance criteria plus the following:
+Presents time blocks for working day.
 
-  * Uses a date utility library to work with date and time
+Time blocks are color-coded based on past, present and future events.
 
-### Deployment: 32%
+User is allowed to enter an event in the time block input field and save it to storage.
 
-* Application deployed at live URL
 
-* Application loads with no errors
+Below screenshot shows how the app would behave (I did have to alter times in code for it to work at time of taking screenshot)
 
-* Application GitHub URL submitted
+![Example site screenshot](./images/screenshotofapp.jpg)
 
-* GitHub repo contains application code
+## Conclusion:
 
-### Application Quality: 15%
+This was a very fun challenge to work on, I think the result is really good, hopefully matching most of the criteria.This was a hard but fun and educational activity, which naturally boosted my skills as well as confidence. Which will hopefully come useful in the future challenges to come. Tt had also shown that there is still a lot to learn, which I am eager to do.
 
-* Application user experience is intuitive and easy to navigate
+## Deployment:
 
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+* Following is a link to the final version of the Website: 'https://davvid96.github.io/Planner-App/'
